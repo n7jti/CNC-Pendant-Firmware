@@ -1,6 +1,6 @@
 # CNC-Pendant-Firmware
 
-This is firmware to run on an Arduino Pro Micro (preferred) or Arduino Nano to interface a popular style of wired CNC pendant to the PanelDue port of Duet electronics. Build it using Arduino. 
+This is firmware to run on an STM32F411CEU6 (Black Pill) to interface a popular style of wired CNC pendant to the PanelDue port of Duet electronics. Build it using Arduino. 
 
 Pendant to Arduino Pro Micro wiring:
 
@@ -12,19 +12,17 @@ GND      0V,       black
          CN,       blue/black
          LED-      white/black
 
-D2       A         green
-D3       B         white
-D4       X         yellow
-D5       Y         yellow/black
-D6       Z         brown
-D7       4         brown/black
-D8       5         powder (if present)
-D9       6         powder/black (if present)
-D10      LED+      green/black
-A0       STOP      blue
-A1       X1        grey
-A2       X10       grey/black
-A3       X100      orange
+PB12       A         green
+PB13       B         white
+PB14       X         yellow
+PB15       Y         yellow/black
+PA8        Z         brown
+PA11       4         brown/black
+PA12       LED+      green/black
+PA15       STOP      blue
+PB3        X1        grey
+PB4        X10       grey/black
+PB5        X100      orange
 
 NC       /A,       violet
          /B        violet/black
